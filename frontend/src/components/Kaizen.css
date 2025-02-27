@@ -1,0 +1,223 @@
+/* General Styles */
+.kaizen-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Kaizen Form */
+.kaizen-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.kaizen-form input,
+.kaizen-form textarea {
+    padding: 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background: #fafafa;
+}
+
+.kaizen-form input:focus,
+.kaizen-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.25);
+    background: white;
+}
+
+/* Upload Button */
+.kaizen-form button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 16px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.kaizen-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+}
+
+/* Kaizen Feed */
+.kaizen-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+/* Kaizen Post Styling */
+.kaizen-post {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.kaizen-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Section */
+.kaizen-images {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+/* Image Wrapper */
+.image-container {
+    position: relative;
+    width: 48%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover {
+    transform: scale(1.03);
+}
+
+/* Image Label */
+.image-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.before {
+    background: #ff4d4d;
+}
+
+.after {
+    background: #28a745;
+}
+
+/* Kaizen Images */
+.kaizen-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Description Styling */
+.kaizen-description {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #444;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Delete Button */
+.delete-button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff4d4d, #cc0000);
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(255, 77, 77, 0.3);
+}
+
+.delete-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 77, 77, 0.4);
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+    .kaizen-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .kaizen-form input,
+    .kaizen-form textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .kaizen-form button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .kaizen-images {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .kaizen-description {
+        font-size: 14px;
+    }
+
+    .delete-button {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kaizen-container {
+        max-width: 95%;
+    }
+
+    .kaizen-form input,
+    .kaizen-form textarea {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .kaizen-form button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .kaizen-description {
+        font-size: 12px;
+    }
+
+    .delete-button {
+        font-size: 10px;
+        padding: 8px;
+    }
+}

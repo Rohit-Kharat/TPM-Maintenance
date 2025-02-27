@@ -1,0 +1,101 @@
+/* Center the form on the page */
+.register-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Style the heading */
+.register-heading {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Form fields styling */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input fields styling */
+.register-input {
+  width: 90%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Focus effect on input */
+.register-input:focus {
+  border-color: #ffffff;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.7);
+}
+
+/* Button group to align buttons side by side */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+/* Button styling */
+.register-button, .login-button {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Sign Up button */
+.register-button {
+  background-color: #28a745;
+  color: white;
+  margin-right: 10px;
+}
+
+.register-button:hover {
+  background-color: #218838;
+}
+
+/* Login button */
+.login-button {
+  background-color: #007bff;
+  color: white;
+  margin-right: 10px;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .register-container {
+      max-width: 90%;
+      padding: 15px;
+  }
+
+  .button-group {
+      flex-direction: column;
+  }
+
+  .register-button, .login-button {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
