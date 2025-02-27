@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 app.use('/uploads', express.static('uploads')); // Serve images statically
 
 // 🔹 **MongoDB Connection**
-mongoose.connect('mongodb://localhost:27017/maintenanceDB', {
+mongoose.connect(process.env.MongoDB, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => console.log("✅ MongoDB Connected"))
